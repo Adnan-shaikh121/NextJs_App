@@ -4,12 +4,10 @@ import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
   return (
-  <>
-  <Header/>
-  <div className='container mx-auto min-h-screen'>container 'bellow header'
-  <Component {...pageProps} />
-  </div>
-  <Footer/>
-  </>
-)}
-
+    <>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  )
+}
