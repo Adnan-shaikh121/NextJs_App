@@ -20,18 +20,18 @@ const Footer = () => {
                             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">ABOUT</h2>
                         </div>
                         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">TODO HISTORY</h2>
+                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">MY TODOS</h2>
 
                         </div>
                         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">EDIFITION</h2>
+                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">FEEDBACK</h2>
 
                         </div>
                     </div>
                 </div>
                 <div class="bg-gray-100">
                     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 EDIFITION —
+                        <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 —
                             <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@</a>
                         </p>
                         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
