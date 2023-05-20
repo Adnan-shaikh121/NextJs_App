@@ -14,7 +14,7 @@ const Header = () => {
                         <Link href={'/my-todos'} class="mr-5 hover:text-gray-900">MY TODOS</Link>
                         <Link href={'/'} class="mr-5 hover:text-gray-900">HOME</Link>
                         <Link href={'/'} class="mr-5 hover:text-gray-900">ABOUT</Link>
-                        <Link href={'/'} class="mr-5 hover:text-gray-900">FEEDBACK</Link>
+                        <Link href={'/login'} class="mr-5 hover:text-gray-900">login</Link>
                     </nav>
 
                 </div>

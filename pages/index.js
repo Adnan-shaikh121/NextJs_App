@@ -1,23 +1,30 @@
 import { Inter } from 'next/font/google'
 import { useState } from 'react'
-
+import { supabase } from '@/supabase';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [todo, setodo] = useState({ title: "", description: "" })
 
-  const addTodo = () => {
-    let todos = localStorage.getItem("todos");
-    if (todos) {
-      let todosJson = JSON.parse(todos);
-        todosJson.push(todo);
-        localStorage.setItem("todos", JSON.stringify(todosJson));
-      
-    } else {
-      localStorage.setItem("todos", JSON.stringify([todo]));
+
+  const addTodo = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('todos')
+        .insert([todo]);
+
+      if (error) {
+        console.error('Error adding todo:', error.message);
+      } else {
+        console.log('Todo added successfully');
+      }
+    } catch (error) {
+      console.error('Error adding todo:', error.message);
     }
   };
+
 
 
   const onChange = (e) => {
@@ -47,3 +54,4 @@ export default function Home() {
     </div>
   )
 }
+
