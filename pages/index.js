@@ -2,8 +2,6 @@ import { Inter } from 'next/font/google'
 import { useState } from 'react'
 import { supabase } from '@/supabase';
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   const [todo, setodo] = useState({ title: "", description: "" })
 
