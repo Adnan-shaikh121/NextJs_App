@@ -60,7 +60,7 @@ const MyTodos = () => {
                                         <div className="flex-grow">
                                             <h2 className="text-gray-900 title-font font-medium">{item.title}</h2>
                                             <p className="text-gray-500">{item.description}</p>
-                                            <button className="text-gray-500 cursor-pointer" onClick={() => deleteTodo(item.title)}>
+                                            <button class="text-white bg-indigo-500 border-0 py-1 px-4 w-fit focus:outline-none hover:bg-red-600 rounded text-lg" onClick={() => deleteTodo(item.title)}>
                                                 DELETE
                                             </button>
                                         </div>
