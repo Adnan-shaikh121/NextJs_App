@@ -25,8 +25,6 @@ export default function Home() {
     }
   };
 
-
-
   const onChange = (e) => {
     setodo({ ...todo, [e.target.name]: e.target.value })
     console.log(todo)
